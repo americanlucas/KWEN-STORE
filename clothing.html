@@ -28,14 +28,14 @@
                <span class="icons">
                     <a href="#" class="material-symbols-outlined">shopping_bag</a>
                     <div class="menu_icon">
-                         <a onclick=showSidebar() href="#" class="material-symbols-outlined">menu</a>
+                         <a href="#" class="material-symbols-outlined">menu</a>
                     </div>
                </span>
           </nav>
           
           <nav class="sidebar">
                <span>
-                    <a onclick=hideSidebar() href="#" class="material-symbols-outlined">close</a>
+                    <a href="#" class="material-symbols-outlined">close</a>
                </span>
                <div>
                     <a href="#" class="topicos_cabecalho">MAIS VENDIDOS</a>
@@ -53,16 +53,16 @@
      <section class="mainpage">
           <div class="sidemenu">
                <nav>
-                    <a class="sidemenu_titulo" href="">COLLECTIONS</a>
-                    <ul>
-                         <li><a class="sidemenu_link" href="">GERAL</a></li>
-                         <li><a class="sidemenu_link" href="">LANÇAMENTOS</a></li>
-                         <li><a class="sidemenu_link" href="">MAIS VENDIDOS</a></li>
-                         <li><a class="sidemenu_link" href="">CAMISETAS</a></li>
-                         <li><a class="sidemenu_link" href="">HOODIES</a></li>
-                         <li><a class="sidemenu_link" href="">CALÇAS</a></li>
-                         <li><a class="sidemenu_link" href="">BERMUDAS</a></li>
-                    </ul>
+                    <button onclick="showSidebar()" class="sidemenu_titulo" href="">COLLECTIONS</button>
+                         <ul  id="menu">
+                              <li><a class="sidemenu_link" href="">GERAL</a></li>
+                              <li><a class="sidemenu_link" href="">LANÇAMENTOS</a></li>
+                              <li><a class="sidemenu_link" href="">MAIS VENDIDOS</a></li>
+                              <li><a class="sidemenu_link" href="">CAMISETAS</a></li>
+                              <li><a class="sidemenu_link" href="">HOODIES</a></li>
+                              <li><a class="sidemenu_link" href="">CALÇAS</a></li>
+                              <li><a class="sidemenu_link" href="">BERMUDAS</a></li>
+                         </ul>
                </nav>
           </div>
           <div class="conjunto_secao">
@@ -140,15 +140,6 @@
 
      
 
-     <script>
-          function showSidebar () {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display = 'flex'
-          }
-          function hideSidebar() {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display = 'none'
-          }
-     </script>
+     <script src="/script.js"></script>
 </body>
 </html>
